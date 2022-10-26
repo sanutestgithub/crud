@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASE-Page</title>
+    <link rel="stylesheet" href="{% static 'enroll/css/bootstrap.css' %}">
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Libre+Baskerville&family=Rubik+Dirt&family=Rubik+Distressed&display=swap" rel="stylesheet">
+    <style>
+    body{
+        background-image:url('static/enroll/img/1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        }
+    h2{
+        margin-top:20px ;       
+        font-family: 'Rubik Dirt', cursive;
+        
+    }
+    </style>
+</head>
+<body>
+    <div class="container" mt-5 >
+        <h2 class="text-center alert alert-danger">CRUD-Project</h2>
+        {% block content %}
+        {% endblock content %}
+    </div>
+    
+
+
+
+
+
+    <script src="{% static 'enroll/js/bootstrap.js' %}"></script>
+    <script src="{% static 'enroll/js/jquery.js' %}"></script>
+    <script src="{% static 'enroll/js/propper.js' %}"></script>
+</body>
+</html>
